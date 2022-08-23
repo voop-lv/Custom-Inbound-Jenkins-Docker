@@ -6,8 +6,8 @@ USER root
 
 COPY install.sh install.sh
 
-RUN chmod 755 -R /install.sh
-RUN bash /install.sh
-RUN rm -rf /install.sh
+RUN chmod 755 -R install.sh
+RUN bash install.sh
+RUN rm -rf install.sh
 
 USER jenkins
