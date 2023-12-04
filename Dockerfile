@@ -11,3 +11,4 @@ RUN bash install.sh
 RUN rm -rf install.sh
 
 USER jenkins
+ENTRYPOINT ["/usr/local/bin/jenkins-agent"]
